@@ -2,10 +2,10 @@
 ob_start();
 session_start();
 $host="localhost"; // Host name
-#$username="kb"; // Mysql username
-#$password="kbpw"; // Mysql password
-$username="symfony"; // Mysql username
-$password="symfonypw"; // Mysql password
+$username="kb"; // Mysql username
+$password="kbpw"; // Mysql password
+#$username="symfony"; // Mysql username
+#$password="symfonypw"; // Mysql password
 $db_name="kb"; // Database name
 $tbl_name="users"; // Table name
 
