@@ -32,16 +32,34 @@ for($i=0;$i<=6;$i++){
 		$cheetahFunctionVote[$i] = array_count_values($cheetahFunction[$i]);
 	}
 }
-$cheetahFunctionName = array("Arnout Franken","Douwe Hut","Henk Jonker","Jochem Schutte","Juliet van der Rijst","Lotte Weedage","Maaike van der Ven","Mariya Karlashchuk","Steven Horstink","Wouter van Harten","Yanna Kraakman");
+var_dump($cheetahFunctionVote);
+ECHO "<br><br>";
+var_dump($cheetahFunctionVote[0]);
+ECHO "<br><br>";
+var_dump($cheetahFunctionVote[5]);
+ECHO "<br><br>";
+var_dump($cheetahFunctionVote[6]);
+#$cheetahFunctionName = array("Arnout Franken","Douwe Hut","Henk Jonker","Jochem Schutte","Juliet van der Rijst","Lotte Weedage","Maaike van der Ven","Mariya Karlashchuk","Steven Horstink","Wouter van Harten","Yanna Kraakman");
+$cheetahFunctionName = array("1"=>"Arnout Franken",
+								"2"=>"Douwe Hut",
+								"3"=>"Henk Jonker",
+								"4"=>"Jochem Schutte",
+								"5"=>"Juliet van der Rijst",
+								"6"=>"Lotte Weedage",
+								"7"=>"Maaike van der Ven",
+								"8"=>"Mariya Karlashchuk",
+								"9"=>"Steven Horstink",
+								"A"=>"Wouter van Harten",
+								"B"=>"Yanna Kraakman");
 $data2 = array();
 if($cheetahFunction != NULL){
 	for($i=0;$i<=6;$i++){
 		$data2[$i] = "";
-		for($k=1;$k<=count($cheetahFunctionName)-1;$k++){
-			if(isset($cheetahFunctionVote[$i][$k])){
-				$data2[$i] .= "{ label: '".$cheetahFunctionName[$k-1]."', data:".$cheetahFunctionVote[$i][$k]."},";
+		foreach ($cheetahFunctionName as $key => $name){
+			if(isset($cheetahFunctionVote[$i][$key])){
+				$data2[$i] .= "{ label: '".$name."', data:".$cheetahFunctionVote[$i][$key]."},";
 			}else{
-				$data2[$i] .= "{ label: '".$cheetahFunctionName[$k-1]."', data:0},";
+				$data2[$i] .= "{ label: '".$name."', data:0},";
 			}
 		}
 	}
@@ -50,6 +68,7 @@ if($cheetahFunction != NULL){
 		$data2[$i] = "{ label: 'Onbekend', data:1},";
 	}
 }
+
 if(isset($_POST['submit'])){	
 	if ($_POST['submit'] =="Next function"){
 		if ($_SESSION['resultCount']<6){
