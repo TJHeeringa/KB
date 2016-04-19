@@ -116,17 +116,15 @@ $(document).ready(function () {
 </head>
   
 <body>
-<div class="container">
-	<div class="main">
-		<h2><?php ECHO $kbFunctions[$_SESSION['resultCount']]?></h2>
-		<div class="inputBox" id="resultPlot"></div>
-		<form action="results.php" method="post">
-			<input name="submit" type="submit" value="Next function">
-		</form>
-		<form action="results.php" method="post">
-			<input name="submit" type="submit" value="Previous function">
-		</form>
-	</div>
+<div class="main">
+	<h2><?php ECHO $kbFunctions[$_SESSION['resultCount']]?></h2>
+	<div class="inputBox" id="resultPlot"></div>
+	<form action="results.php" method="post">
+		<input name="submit" type="submit" value="Next function">
+	</form>
+	<form action="results.php" method="post">
+		<input name="submit" type="submit" value="Previous function">
+	</form>
 </div>
 </body>
 </html>
