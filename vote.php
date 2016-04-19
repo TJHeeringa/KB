@@ -57,67 +57,67 @@ if($_SESSION['count']>=7){
 				<tr>
 					<td><input name="radio" type="radio" value="1"></td>
 					<td class="image_row" ><?php ECHO $kbCandidates[0]?>
-						<div class="image_container"><img src="images/Arnout"></div>
+						<div class="image_container"><img src="images/Arnout.jpg"></div>
 					</td>
 				<tr>
 				<tr>
 					<td><input name="radio" type="radio" value="2"></td>
 					<td class="image_row" ><?php ECHO $kbCandidates[1]?>
-						<div class="image_container"><img src="images/Douwe"></div>
+						<div class="image_container"><img src="images/Douwe.jpg"></div>
 					</td>
 				<tr>
 				<tr>
 					<td><input name="radio" type="radio" value="3"></td>
 					<td class="image_row" ><?php ECHO $kbCandidates[2]?>
-						<div class="image_container"><img src="images/Henk"></div>
+						<div class="image_container"><img src="images/Henk.jpg"></div>
 					</td>
 				<tr>
 				<tr>
 					<td><input name="radio" type="radio" value="4"></td>
 					<td class="image_row" ><?php ECHO $kbCandidates[3]?>
-						<div class="image_container"><img src="images/Jochem"></div>
+						<div class="image_container"><img src="images/Jochem.jpg"></div>
 					</td>
 				<tr>
 				<tr>
 					<td><input name="radio" type="radio" value="5"></td>
 					<td class="image_row" ><?php ECHO $kbCandidates[4]?>
-						<div class="image_container"><img src="images/Juliet"></div>
+						<div class="image_container"><img src="images/Juliet.jpg"></div>
 					</td>
 				<tr>
 				<tr>
 					<td><input name="radio" type="radio" value="6"></td>
 					<td class="image_row" ><?php ECHO $kbCandidates[5]?>
-						<div class="image_container"><img src="images/Lotte"></div>
+						<div class="image_container"><img src="images/Lotte.jpg"></div>
 					</td>
 				<tr>
 				<tr>
 					<td><input name="radio" type="radio" value="7"></td>
 					<td class="image_row" ><?php ECHO $kbCandidates[6]?>
-						<div class="image_container"><img src="images/Maaike"></div>
+						<div class="image_container"><img src="images/Maaike.jpg"></div>
 					</td>
 				<tr>
 				<tr>
 					<td><input name="radio" type="radio" value="8"></td>
 					<td class="image_row" ><?php ECHO $kbCandidates[7]?>
-						<div class="image_container"><img src="images/Mariya"></div>
+						<div class="image_container"><img src="images/Mariya.jpg"></div>
 					</td>
 				<tr>
 				<tr>
 					<td><input name="radio" type="radio" value="9"></td>
 					<td class="image_row" ><?php ECHO $kbCandidates[8]?>
-						<div class="image_container"><img src="images/Steven"></div>
+						<div class="image_container"><img src="images/Steven.jpg"></div>
 					</td>
 				<tr>
 				<tr>
 					<td><input name="radio" type="radio" value="A"></td>
 					<td class="image_row" ><?php ECHO $kbCandidates[9]?>
-						<div class="image_container"><img src="images/Wouter"></div>
+						<div class="image_container"><img src="images/Wouter.jpg"></div>
 					</td>
 				<tr>
 				<tr>
 					<td><input name="radio" type="radio" value="B"></td>
 					<td class="image_row" ><?php ECHO $kbCandidates[10]?>
-						<div class="image_container"><img src="images/Yanna"></div>
+						<div class="image_container"><img src="images/Yanna.jpg"></div>
 					</td>
 				<tr>
 			</table>
