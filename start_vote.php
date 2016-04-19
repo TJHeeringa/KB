@@ -20,20 +20,30 @@ $mypassword = stripslashes($mypassword);
 $myusername = mysqli_real_escape_string($con, $myusername);
 $mypassword = mysqli_real_escape_string($con, $mypassword);
 
+$sql = "SELECT name FROM $tbl_name WHERE name='$myusername'";
+$query=mysqli_query($con,$sql);
+$result = mysqli_fetch_array($query);
+
 if($mypassword=="KB49"){
 	if($_SESSION['voted'] == FALSE){
-		$sql="INSERT INTO $tbl_name (name) VALUES ('$myusername')";
-		$result=mysqli_query($con,$sql);
-		// Mysql_num_row is counting table row
+		if ($result == NULL){
+			$sql="INSERT INTO $tbl_name (name) VALUES ('$myusername')";
+			$result=mysqli_query($con,$sql);
+			// Mysql_num_row is counting table row
 
-		// Register $myusername and redirect to file "vote.php"
-		$_SESSION['name'] = $myusername;
-		header("location:vote.php");
+			// Register $myusername and redirect to file "vote.php"
+			$_SESSION['name'] = $myusername;
+			header("location:vote.php");
+		}else{			
+			$_SESSION['message'] = "Please enter a different name.";
+			header("location:index.php");
+		}
 	} else {
+		$_SESSION['message'] = "You have already voted.";
 		header("location:index.php");
-		echo "Already voted";
 	}
 } else {
+	$_SESSION['message'] = "Please enter the correct code.";
 	header("location:index.php");
 }
 ob_end_flush();
