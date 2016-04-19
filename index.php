@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>PHP Get Value of Select Option and Radio Button</title> <!-- Include CSS File Here-->
+<title>Candidateboard poll</title> <!-- Include CSS File Here-->
 <link href="css/style.css" rel="stylesheet">
 
 <?php

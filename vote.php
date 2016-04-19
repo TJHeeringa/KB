@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>PHP Get Value of Select Option and Radio Button</title>
+<title>Function poll</title>
 <link href="css/style.css" rel="stylesheet">
 <?php
 session_start();
