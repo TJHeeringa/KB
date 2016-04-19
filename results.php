@@ -102,7 +102,7 @@ $(document).ready(function () {
 					show:true,
 					radius: 2/4,
 					formatter: labelFormatter,
-					threshold:0.15
+					threshold:0.10
 				}
             }
 		}, legend: {
