@@ -32,14 +32,6 @@ for($i=0;$i<=6;$i++){
 		$cheetahFunctionVote[$i] = array_count_values($cheetahFunction[$i]);
 	}
 }
-var_dump($cheetahFunctionVote);
-ECHO "<br><br>";
-var_dump($cheetahFunctionVote[0]);
-ECHO "<br><br>";
-var_dump($cheetahFunctionVote[5]);
-ECHO "<br><br>";
-var_dump($cheetahFunctionVote[6]);
-#$cheetahFunctionName = array("Arnout Franken","Douwe Hut","Henk Jonker","Jochem Schutte","Juliet van der Rijst","Lotte Weedage","Maaike van der Ven","Mariya Karlashchuk","Steven Horstink","Wouter van Harten","Yanna Kraakman");
 $cheetahFunctionName = array("1"=>"Arnout Franken",
 								"2"=>"Douwe Hut",
 								"3"=>"Henk Jonker",
